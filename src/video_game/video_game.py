@@ -11,35 +11,11 @@ Game sounds and tile maps bu author
 
 import arcade
 import pathlib
+from constants import *
 
-# Game constants
-# Window dimensions
-SCREEN_WIDTH = 1000
-SCREEN_HEIGHT = 650
-SCREEN_TITLE = "Video Game"
-
-# Scaling constants
-MAP_SCALING = 1.0
-
-# Player constants
-GRAVITY = 1.0
-PLAYER_START_X = 65
-PLAYER_START_Y = 256
-PLAYER_MOVE_SPEED = 10
-PLAYER_JUMP_SPEED = 20
-
-# View margines
-# How close do we have to be to scroll the viewport?
-LEFT_VIEWPORT_MARGIN = 50
-RIGHT_VIEWPORT_MARGIN = 300
-TOP_VIEWPORT_MARGIN = 150
-BOTTOM_VIEWPORT_MARGIN = 150
-
-# Joystick control
-DEAD_ZONE = 0.1
 
 # Assets path
-ASSETS_PATH = pathlib.Path(__file__).resolve().parent.parent / "assets"
+ASSETS_PATH = pathlib.Path(__file__).resolve().parent.parent.parent / "assets"
 
 
 class Enemy(arcade.AnimatedWalkingSprite):
@@ -685,14 +661,3 @@ class PlatformerView(arcade.View):
             color=arcade.csscolor.WHITE,
             font_size=40
         )
-
-
-if __name__ == "__main__":
-    window = arcade.Window(
-        width=SCREEN_WIDTH, height=SCREEN_HEIGHT, title=SCREEN_TITLE
-    )
-    title_view = TitleView()
-    window.show_view(title_view)
-    arcade.run()
-
- 
