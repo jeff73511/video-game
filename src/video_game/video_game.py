@@ -11,7 +11,7 @@ Game sounds and tile maps bu author
 
 import arcade
 import pathlib
-from constants import *
+from .constants import *
 
 
 # Assets path

@@ -1,0 +1,4 @@
+include assets/images/**/*.png
+include assets/sounds/*.wav
+include assets/*.tsx
+include assets/*.tmx

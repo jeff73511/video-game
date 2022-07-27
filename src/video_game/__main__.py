@@ -1,6 +1,6 @@
-from constants import *
+from .constants import *
 import arcade
-from video_game import TitleView
+from .video_game import TitleView
 
 
 def main():

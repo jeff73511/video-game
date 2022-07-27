@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "video-game"
+version = "1.0.0"
+description = "Video game using arcade library"
+readme = "README.md"
+authors = ["Jeff Chen <jeff73511@msn.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+arcade = "^2.5.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
