@@ -15,7 +15,7 @@ from .constants import *
 
 
 # Assets path
-ASSETS_PATH = pathlib.Path(__file__).resolve().parent.parent.parent / "assets"
+ASSETS_PATH = pathlib.Path(__file__).resolve().parent / "assets"
 
 
 class Enemy(arcade.AnimatedWalkingSprite):
@@ -565,7 +565,7 @@ class PlatformerView(arcade.View):
         if enemies_hit:
             self.setup()
             title_view = TitleView()
-            window.show_view(title_view)
+            self.window.show_view(title_view)
 
         # Now check if we are at the ending goal
         goals_hit = arcade.check_for_collision_with_list(
